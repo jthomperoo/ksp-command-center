@@ -1,0 +1,100 @@
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-family: 'VT323', monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+.grid-container {
+    display: grid;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex-grow: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-bottom: 100px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+    width: 100%;
+    /* Full-width */
+    height: 25px;
+    /* Specified height */
+    background: #d3d3d3;
+    /* Grey background */
+    outline: none;
+    /* Remove outline */
+    opacity: 0.7;
+    /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: 0.2s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default look */
+    appearance: none;
+    width: 25px;
+    /* Set a specific slider handle width */
+    height: 25px;
+    /* Slider handle height */
+    background: rgb(0, 255, 255);
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    /* Set a specific slider handle width */
+    height: 25px;
+    /* Slider handle height */
+    background: rgb(0, 255, 255);
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+
+.tui-checkbox {
+    padding-left: 50px;
+}
+
+.tui-radio {
+    padding-left: 50px;
+}
+
+.tui-window {
+    .tui-fieldset {
+        height: 100%;
+    }
+}
